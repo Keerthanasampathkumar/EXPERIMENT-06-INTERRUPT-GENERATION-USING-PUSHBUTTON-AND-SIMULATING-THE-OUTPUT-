@@ -181,9 +181,11 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 ## Output screen shots of proteus  :
  # LED ON:
- ![ex06 1](https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/b8d94cfa-fd04-4cd5-a5f6-449c78ca99c7)
+![ex 061](https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/e3fecd8c-a2bd-4157-a20d-63e95d2c9cb7)
+
 # LED OFF:
-![ex06 2](https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/e3360c38-4cc2-4ce5-a2e4-4992d5daab2f)
+![ex 062](https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/bedf5d8a-2ce9-4c03-ad76-c79fad44094d)
+
 
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
