@@ -2,7 +2,7 @@
 NAME : KEERTHANA S
 REG NO : 212222230066
 ```
-# EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT
+# EXPERIMENT-06 INTERRUPT GENERATION USING PUSHBUTTON AND SIMULATING THE OUTPUT
 
 ### Aim:
 To Interface a push button and generate an interrupt , simulate it using an led and simuate it on  proteus 
@@ -37,33 +37,29 @@ One important thing to note here is that same number pins are connected to line 
 
 Now each of these lines EXTI0-EXTI15 can be used to trigger an interrupt on different modes of the signal : rising edge, falling edge or rising_falling edge.
 ## Procedure:
-1.Open a new STM32 Project.
+ 1. Open a new STM32 Project.
+ 2. Selecting GPIO Ports
 
-2.Selecting GPIO Ports
+     PA9 -> GPIO EXTI9
 
- PA9 -> GPIO EXTI9
+     PA11 -> GPIO Output
+    
+4. Configure the PA9 Port at Pull up Mode followed by Click NVIC function and select enable.
+5. Select RCC  function followed by click High speed clock -> Crystal/ceramic Resonator.
+6. Select Clock configuration followed by Select
+         -> input frequency -> HSE  -> Enable css
+7. Remove error using Resolve clock issue and generate the code.
+8. define  the callback function.
+9. Build Debug and Create 'hex.file'
+10. Open a new Proteus Project.
+11. Select ports STM32F401RB, LED and Push Button.
+12. Connect PA9 to Push Button and PA11 to LED.
+13. Check for execution of the output using Push Button option.
+              
 
- PA11 -> GPIO Output
 
-3.Configure the PA9 Port at Pull up Mode followed by Click NVIC function and select enable.
 
-4.Select RCC function followed by click High speed clock -> Crystal/ceramic Resonator.
-
-5.Select Clock configuration followed by Select -> input frequency -> HSE -> Enable css
-
-6.Remove error using Resolve clock issue and generate the code.
-
-7.define the callback function.
-
-8.Build Debug and Create 'hex.file'
-
-9.Open a new Proteus Project.
-
-10.Select ports STM32F401RB, LED and Push Button.
-
-11.Connect PA9 to Push Button and PA11 to LED.
-
-12.Check for execution of the output using Push Button option.
+  
 
 ## STM 32 CUBE PROGRAM :
 ```c
@@ -177,20 +173,22 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 }
 #endif 
+
+
 ```
 
 ## Output screen shots of proteus  :
  # LED ON:
-![ex0006](https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/c9458cdd-2bb4-4757-9f47-bcd3c4fecc05)
+<img src=https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/c9458cdd-2bb4-4757-9f47-bcd3c4fecc059  width=450 height=450>
 
 
 # LED OFF:
-![ex 062](https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/bedf5d8a-2ce9-4c03-ad76-c79fad44094d)
+<img src=https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/bedf5d8a-2ce9-4c03-ad76-c79fad44094d9  width=450 height=450>
 
 
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- ![ex 6 3](https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/f6e58ae5-14c7-48f7-813f-5fde644dc87d)
+<img src=https://github.com/Keerthanasampathkumar/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119477890/f6e58ae5-14c7-48f7-813f-5fde644dc87d9  width=450 height=450>
 
  
 ## Result :
